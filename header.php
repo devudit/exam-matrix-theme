@@ -48,15 +48,11 @@
                             );
                             wp_nav_menu( $defaults );
                         ?>
-                    <?php if ( !is_user_logged_in() ) { ?>
-                    <div class="user-login">
-                        <form>
-                            <input class="field" type="text" placeholder="User Name" />
-                            <input class="field" type="password" placeholder="Password"/>
-                            <input class="btngo" type="submit" value="GO" />
-                        </form>
-                    </div>
-                    <?php } else { ?>
+                    <?php if ( !is_user_logged_in() ) {
+                            if ( is_active_sidebar( 'headertop' ) ) :
+                                    dynamic_sidebar( 'headertop' );
+                            endif;
+                        } else { ?>
                     <ul class="nav user">
                         <li class="menu menu-base">
                           <a class="menu menu-a" href="#" onclick="return false;">

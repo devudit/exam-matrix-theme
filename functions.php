@@ -38,6 +38,15 @@ add_filter( 'wp_title', 'emerico_wp_title', 10, 2 );
 
 // Sidebars
 function emerico_widgets_init() {
+        register_sidebar( array(
+		'name' => __( 'Header Top Sidebar', 'emerico' ),
+		'id' => 'headertop',
+		'description' => __( 'Appears on posts and pages except the optional Front Page template, which has its own widgets', 'emerico' ),
+		'before_widget' => ' <div class="user-login">',
+		'after_widget' => '</div>',
+		'before_title' => '<h3 class="widgettitle">',
+		'after_title' => '</h3>',
+	) );
 	register_sidebar( array(
 		'name' => __( 'Main Sidebar', 'emerico' ),
 		'id' => 'sidebarmain',
@@ -47,7 +56,6 @@ function emerico_widgets_init() {
 		'before_title' => '<h3 class="widgettitle">',
 		'after_title' => '</h3>',
 	) );
-	
 	register_sidebar( array(
 		'name' => __( 'Home top left', 'emerico' ),
 		'id' => 'hometopleft',
