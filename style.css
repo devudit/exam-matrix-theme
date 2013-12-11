@@ -1,0 +1,237 @@
+/* 
+    Theme Name: Emerico
+    Theme URI: http://uditrawat.zql.in
+    Author: Udit Rawat
+    Author URI: http://templaza.com/
+    Description: Develop to suit exam engine
+    Version: 1.0.6
+    License: GNU General Public License v2 or later
+    License URI: http://uditrawat.zql.in
+    Tags: Exam engine
+    Text Domain: emerico
+*/
+@font-face {
+    font-family: 'geosans';
+    src: url('font/geosanslight-webfont.eot');
+    src: url('font/geosanslight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/geosanslight-webfont.woff') format('woff'),
+         url('font/geosanslight-webfont.ttf') format('truetype'),
+         url('font/geosanslight-webfont.svg#geosanslightregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+body,html,head,div,h1,h2,h3,h4,h5,h6,p,span{
+    margin:0;
+    padding:0;
+}
+body{
+    font-family: 'geosans' !important;
+}
+.header {
+    z-index: 200;
+    height: 60px;
+    margin-bottom: 20px;
+    background-color: #4cbcc7;
+    position: fixed;
+    width: 100%;
+    border-bottom: none;
+}
+.header .logo {
+    position: relative;
+    left: -15px;
+    float: left;
+    padding: 15px;
+}
+.header .nav {
+    float: left;
+    margin: 0px 0 0;
+    list-style:none;
+}
+.header .nav ul{
+    margin: 0px;
+    padding:0px;
+}
+.header .nav li {
+    float: left;
+    line-height: 18px;
+    list-style: none;
+}
+.header .nav li a {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=99);
+    opacity: 0.99;
+    padding: 25px 15px;
+    color: #c1e8eb;
+    font-size: 13px;
+    white-space: nowrap;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    -webkit-transition: opacity 0.1 ease;
+    -moz-transition: opacity 0.1 ease;
+    -ms-transition: opacity 0.1 ease;
+    -o-transition: opacity 0.1 ease;
+    transition: opacity 0.1 ease;
+    display: block;
+    text-decoration: none;
+}
+.header .nav li a:hover, .header .nav li a:active {
+    color: #fff;
+    background-color: transparent;
+}
+.user-login{
+    display: block;
+    float: right;
+    padding: 17px 0;
+}
+.btngo{
+    border: none;
+    padding: 3px 8px;
+    border-radius: 30px;
+    -moz-border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -khtml-border-radius: 30px;
+}
+.btngo:hover, .btngo:active{
+    box-shadow: 0px 0px 5px #000;
+    -moz-box-shadow: 0px 0px 5px #000;
+    -webkit-box-shadow: 0px 0px 5px #000;
+    -khtml-box-shadow: 0px 0px 5px #000;
+}
+.container {
+    overflow: hidden;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 940px;
+    overflow: visible;
+}
+.left-sidebar{
+    display: block;
+    position: fixed;
+    margin-top: 6em;
+    width: 280px;
+    max-width: 280px;
+    min-width: 280px;
+    min-height: 530px;
+    height: 530px;
+    background-color: #fff;
+    width: 30%;
+    z-index: 2;
+    border: 1px solid #cbcbcb;
+    border: 1px solid #cbcbcb;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-transition: left 0.1s linear;
+    -moz-transition: left 0.1s linear;
+    -o-transition: left 0.1s linear;
+    transition: left 0.1s linear;
+}
+.content{
+    z-index: 1;
+    width: 65%;
+    position: absolute;
+    height: 100%;
+    min-width: 400px;
+    color: #7f7d7e;
+    margin-left: 35%;
+    margin-top: 6em;
+    min-height: 515px;
+    padding-left: 3.5rem;
+    box-sizing: border-box;
+    -webkit-transition: opacity 0.3s linear;
+    -moz-transition: opacity 0.3s linear;
+    -o-transition: opacity 0.3s linear;
+    transition: opacity 0.3s linear;
+    border-left: 1px solid #CCC;
+}
+.content .data{
+    
+}
+.widget-top-left{
+    width: 329px;
+    height: 230px;
+    display: inline-block;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: 50% 10%;
+    background-color: rgba(10,10,10,0.5);
+}
+.widget-top-right{
+    width: 200px;
+    height: 230px;
+    margin-bottom: 0rem;
+    margin-left: 5px;
+    display: inline-block;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: 50% 10%;
+    background-color: rgba(10,10,10,0.5);
+}
+.widget-bottom{
+    width: 539px;
+    margin-top: 3px;
+    height: 208px;
+    isplay: inline-block;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: 50% 10%;
+    background-color: rgba(10,10,10,0.5);
+}
+.header .user {
+    float: right;
+    margin: 0;
+}
+.menu.menu-base {
+    right: -2rem;
+    min-width: 14rem;
+}
+.header .user li a {
+    padding-right: 20px;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=99);
+    opacity: 0.99;
+    padding: 20px;
+    color: #c1e8eb;
+    font-size: 13px;
+    white-space: nowrap;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    -webkit-transition: opacity 0.1 ease;
+    -moz-transition: opacity 0.1 ease;
+    -ms-transition: opacity 0.1 ease;
+    -o-transition: opacity 0.1 ease;
+    transition: opacity 0.1 ease;
+    margin-left: 18px;
+}
+.header .user .avatar {
+    -webkit-border-radius: 15px;
+    border-radius: 15px;
+    position: relative;
+    top: -1px;
+    padding: 2px;
+    background-color: #fff;
+    display: inline-block;
+    vertical-align: middle;
+    zoom: 1;
+    z-index: 8;
+}
+.avatar img {
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    position: relative;
+    z-index: 8;
+    display: block;
+}
+.header .user span{
+    margin-left: 10px;
+}
+.post-thumbnail{
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 5px;
+}
+#title h1{
+    color: #4cbcc7;
+    text-transform: capitalize;
+}
